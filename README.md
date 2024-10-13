@@ -11,8 +11,8 @@
 Сначала клонируйте репозиторий на свою локальную машину:
 
 ```bash
-git clone https://github.com/ваш-логин/ваш-репозиторий.git
-cd ваш-репозиторий
+git clone https://github.com/MrArtur0074/django-itfest.git
+cd django-itfest
 ```
 
 ### 2. Создайте виртуальное окружение
