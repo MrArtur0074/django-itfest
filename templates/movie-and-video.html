@@ -1,0 +1,339 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>IT Fest</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- Owl Carousel JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header class="h-screen bg-cover relative flex flex-col select-none">
+        <nav>
+            <div class="d-flex container px-4 m-auto items-center md-justify-between">
+                <a href="/" class="cursor-pointer block flex flex-grow lg:flex-grow-0">
+                    <img class="header-logo" src="/images/logo.png">
+                </a>
+                <div class="md-hidden d-flex justify-content-evenly flex-auto">
+                    <a href="/" class="cursor-pointer block flex flex-grow lg:flex-grow-0">
+                        Главная
+                    </a>
+                    <a href="/#sections" class="cursor-pointer block flex flex-grow lg:flex-grow-0">
+                        Секции
+                    </a>
+                    <a href="/#spikers" class="cursor-pointer block flex flex-grow lg:flex-grow-0">
+                        Спикеры
+                    </a>
+                    <a href="/#sponsors" class="cursor-pointer block flex flex-grow lg:flex-grow-0">
+                        Спонсоры
+                    </a>
+                    <a href="/#partners" class="cursor-pointer block flex flex-grow lg:flex-grow-0">
+                        Партнеры
+                    </a>
+                </div>
+                <div class="menu-mob">
+                    <div id="menu-open" class="cursor-pointer hover:bg-primary-purple rounded-lg transition-all duration-150">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.9952 25H38.0054" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M11.9952 33.0033H38.0054" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M11.9946 16.9966H38.0047" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="header-main row p-2">
+                <div class="col-md-6">
+                    <h1 class="main-title mob-size">
+                        Секция: Мобилография
+                    </h1>
+                    <p>
+                        В секции «Мобилография» принимают участие творческие видео работы в форматах: интернет-видео, рекламных роликов, видео блоги, короткометражные фильмы и так далее. Перед вашей командой будет поставлена задача стать съемочной командой и снять сюжет на заданную тему
+                    </p>
+                    <div>
+                        <a class="button main-btn" href="#sections">
+                            Стать участником
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <img class="main-image" src="/images/1698653662812.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="directions">
+            <div class="container">
+                <!--<div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="sections-item bg-white">
+                            <div class="d-flex justify-content-between">
+                                <img class="p-3 image-section" src="/images/one.png" style="box-shadow: 0 16px 56px rgba(84, 127, 243, 0.3);">
+                            </div>
+                            <h2 class="sections-item-title">
+                                Цифровой <br> университет
+                            </h2>
+                            <a class="button sections-item-btn" href="/information-technology.html">Стать участником</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="sections-item bg-white">
+                            <div class="d-flex justify-content-between">
+                                <img class="p-3 image-section" src="/images/four.png" style="box-shadow: 0 16px 56px rgba(84, 127, 243, 0.3);">
+                            </div>
+                            <h2 class="sections-item-title">
+                                Цифровая <br> школа
+                            </h2>
+                            <a class="button sections-item-btn" href="/information-technology.html">Стать участником</a>
+                        </div>
+                    </div>
+                </div>-->
+                <h1 style="text-align: center; margin-bottom: 20px;" class="main-title">
+                    Призы
+                </h1>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="bg-white">
+                            <h2 style="font-weight: 700;" class="text-center sections-item-title">
+                                1 место
+                            </h2>
+                            <p style="font-size: 1.5rem;" class="text-center">
+                                50 000 сом
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="bg-white">
+                            <h2 style="font-weight: 700;"  class="text-center sections-item-title">
+                                2 место
+                            </h2>
+                            <p style="font-size: 1.5rem;" class="text-center">
+                                40 000 сом
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="bg-white">
+                            <h2 style="font-weight: 700;"  class="text-center sections-item-title">
+                                3 место
+                            </h2>
+                            <p style="font-size: 1.5rem;" class="text-center">
+                                30 000 сом
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="directions">
+            <div class="container">
+                <h1 style="margin-bottom: 20px;" class="main-title">
+                    Задания:
+                </h1>
+                <ol>
+                    <li>Миротворчество: как IT-технологии в будущем смогут спасти мир от конфликтов между странами. </li>
+                    <li>Технологии будущего: видение 2038 года - создайте короткие видео, в которых представьте, какие технологии будут актуальны через 15 лет, в 2038 году.</li>
+                    <li>Спасем экологию  страны и мира.</li>
+                    <li>Нет бытовому насилию </li>
+                    <li>К чему могут привести азартные игры, лудомания.</li>
+                    <li>Создать страновой имиджевый ролик</li>
+                </ol>
+                <h1 style="margin-bottom: 20px;" class="main-title">
+                    Общие положения:
+                </h1>
+                <ul>
+                    <li>Секция «Кино и видео» представляет собой смотр творческих проектов, выполненных в различных форматах на темы, которые будут озвучены спонсорами и организаторами проекта на открытии фестиваля.</li>
+                    <li>Общая цель секции – дать возможность студентам ВУЗов, учащимся школ и представителям иных молодежных формирований продемонстрировать свои профессиональные навыки и творческий потенциал в области видео искусства, тем самым приняв участие в социальной, культурной и экономической сферах жизни общества.</li>
+                </ul>
+                <h1 style="margin-bottom: 20px;" class="main-title">
+                    Цели секции «Кино и видео»:
+                </h1>
+                <ul>
+                    <li>Выявление творческого и профессионального потенциала участников конкурса в области видео.</li>
+                    <li>Развитие профессиональных навыков и творческих способностей участников.</li>
+                    <li>Предоставить возможность авторам почувствовать свою значимость в решении актуальных проблем современного общества.</li>
+                </ul>
+                <h1 style="margin-bottom: 20px;" class="main-title">
+                    В секции «Кино и видео» номинации могут предложить компаний партнеры.
+                </h1>
+                <h1 style="margin-bottom: 20px;" class="main-title">
+                    Регламент секции «Кино и видео».
+                </h1>
+                <ul>
+                    <li>Одна работа не может занять более одной основной номинации.</li>
+                    <li>Предпочтительная продолжительность работы - до 10 минут.</li>
+                    <li>Технические требования к номинациям указаны в приложениях.</li>
+                    <li>Жюри секции «Кино и видео», состоящее из практикующих специалистов в сфере кино, театра, теле- и радиовещания, PR и рекламы, компаний партнеров путем обсуждений и голосования, определяет победителей в номинациях.</li>
+                    <li>Принимаются работы с применением новых медиа и цифровых технологий, видео-арта, интерактивных технологий, мультимедиа, компьютерного арта, видеоинсталляций, аудиовизуальных перфомансов, био-арта и др.</li>
+                    <li>Вопросы организаторам можно задать в группе <a href="#">Телеграм</a></li>
+                </ul>
+                <h1 style="margin-bottom: 20px;" class="main-title">
+                    Оценка работ осуществляется по следующим критериям
+                </h1>
+                <ul><li data-block-key="v7ssz">Соответствие заявленной тематике</li><li data-block-key="tjnz8">Техническая сложность</li><li data-block-key="w40mh">Художественность</li><li data-block-key="n7hem">Актуальность темы</li><li data-block-key="1mzrp">Оригинальность идеи, исполнения и подачи</li><li data-block-key="pgsfo">Наличие четко сформулированной идеи</li><li data-block-key="smk9b">Эффект воздействия на аудиторию</li></ul>
+                <h1 style="margin-bottom: 20px;" class="main-title">
+                    Права и обязанности Организаторов и участников секции «Кино и видео».
+                </h1>
+                <ul><li data-block-key="68uhs">В секции «Кино и видео» могут принимать участие школьники и студенты всех учебных заведений РК, независимо от получаемой специальности.</li><li data-block-key="anqmu">К участию допускаются как индивидуальные участники, так и команды(максимально допустимое количество участников в одной команде - 3).</li><li data-block-key="dm63i">Количество работ, предоставленных отдельным участником или командой, не ограничено.</li><li data-block-key="53pgk">Участникам разрешено подавать заявки более, чем в одну номинацию.</li><li data-block-key="920im">Участникам запрещено предоставлять работы, ранее участвовавшие на любом другом фестивале.</li><li data-block-key="13o0l">Каждая работа должна соответствовать выбранной категории.</li><li data-block-key="61e1r">Переданная работа дает Организаторам право на использование работы по своему усмотрению в рамках фестиваля «ITFest».</li><li data-block-key="abqhb">Переданные на секцию «Кино и видео» работы не возвращается.</li><li data-block-key="9d4q8">Оргкомитет секции «Кино и видео» имеет право не допускать к оценке жюри работы, не соответствующие этическим, моральным и правовым требованиям.</li><li data-block-key="9buhh">Оргкомитет секции «Кино и видео» оставляет за собой право о неразглашении имен победителей до дня официального подведения итогов фестиваля «ITFest».</li><li data-block-key="8h90h">Запрещено присылать на секцию «Кино и видео» работы, автором которых не является участник. К работе допускаются только собственные работы участников.</li><li data-block-key="ch89r">Факт подачи работ на секцию «Кино и видео» означает согласие с вышеперечисленными правилами.</li><li data-block-key="2r83i">Для музыкального видеоклипа, короткометражного и анимационного фильмов в секции «Кино и видео» обязательно указание в титрах автора стихов, музыки и имени исполнителя (названия группы) композиции, которую участник использует для создания своей работы.</li></ul>
+                <h1 style="margin-bottom: 20px;" class="main-title">
+                    Технические требования секции «Кино и видео».
+                </h1>
+                <p data-block-key="tzmdn">Технические требования секции «Кино и видео».<br>Все работы принимаются только на цифровых носителях (CD, DVD, Flashнакопители). Видео необходимо предоставлять оргкомитету в двух вариантах:</p>
+                <ul><li data-block-key="mq5m">Цифровое видео, не сжатое видеокодеками (High-Quality – Высокое качество).</li><li data-block-key="3h997">Цифровое видео, сжатое видеокодеком H.264 (MP4).</li><li data-block-key="6skig">Разрешение видео не должно превышать 768х576 (720р).</li><li data-block-key="5sg3s">Звук видеороликов должен быть сжат в формат MP3<br></li></ul>
+                <p data-block-key="eoe23">Работы загружаются с 16.00 23 августа до 11.00 24 августа на сайте от зарегистрированных участников фестиваля.</p>
+                <p data-block-key="4fqg1">Файл необходимо назвать фамилией участников, указав название команды.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="d-flex flex-col align-items-stretch">
+                <div class="wrapper-footer" style="margin: 0 auto;">
+                    <div class="d-flex justify-content-between mob-wrap">
+                        <div>
+                            <img class="footer-logo" src="/images/logo.png" alt="ITfest">
+                        </div>
+                        <div class="d-flex gap-6 space-x-4 items-center">
+                            <a href="https://t.me/itfest2024" target="_blank">
+                                <img class="hover:bg-primary-purple rounded-full cursor-pointer transition-all duration-150" alt="instagram" src="/images/telegram.svg">
+                            </a>
+                            <a href="https://www.instagram.com/itfest_bishkek/?igsh=MTFubTEzOXp5eDV4eQ%3D%3D">
+                                <img class="hover:bg-primary-purple rounded-full cursor-pointer transition-all duration-150" alt="instagram" src="/images/instagram.svg">
+                            </a>
+                            <a href="https://wa.me/996552644444">
+                                <img class="hover:bg-primary-purple rounded-full cursor-pointer transition-all duration-150 facebook" alt="facebook" width="46px" src="/images/facebook.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-6 align-items-center footer-links">
+                        <a class="hover:underline cursor-pointer px-2 transition-all " href="/">
+                            Главная
+                        </a>
+                        <a class="hover:underline cursor-pointer px-2 transition-all" href="/#sections">
+                            Секции
+                        </a>
+                        <a class="hover:underline cursor-pointer px-2 transition-all" href="/#spikers">
+                            Спикеры
+                        </a>
+                        <a class="hover:underline cursor-pointer px-2 transition-all" href="/#sponsors">
+                            Спонсоры
+                        </a>
+                        <a class="hover:underline cursor-pointer px-2 transition-all" href="/#partners">
+                            Партнеры
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-b border-white mt-8"></div>
+            <div class="mt-8 text-center text-white">
+                <div class="mb-2">
+                    
+                </div>
+                <div>
+                    © ITFest, 2024 г.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="sidebar" class="top-0 right-0 h-screen left-0 grid grid-cols-5 overflow-scroll fixed" style="/*background-color: rgba(0, 0, 0, 0.4);*/ z-index: 10">
+        <div class="col-span-4 col-start-2 sm:col-span-2 sm:col-start-4 bg-primary-purple flex flex-col items-end px-4 space-y-3 text-white text-xl">
+            <div class="d-flex align-items-center justify-content-end" style="height: 120px">
+                <div id="menu-close" class="cursor-pointer" style="cursor: pointer;">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 16L32 32" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M32 16L16 32" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="d-flex flex-col menu-mob">
+                <a class="hover:underline cursor-pointer" href="/">
+                    Главная
+                </a>
+                <a class="hover:underline cursor-pointer" href="/#sections">
+                    Секции
+                </a>
+                <a class="hover:underline cursor-pointer" href="/#spikers">
+                    Спикеры
+                </a>
+                <a class="hover:underline cursor-pointer" href="/#sponsors">
+                    Спонсоры
+                </a>
+                <a class="hover:underline cursor-pointer" href="/#partners">
+                    Партнеры
+                </a>
+            </div>
+            <div>
+                <a class="button button-outline button-sm flex justify-center text-base" href="/login">
+                    Войти
+                </a>
+            </div>
+            
+            <div class="d-flex justify-content-start space-x-5 gap-6">
+                <a href="https://t.me/itfest2024" target="_blank">
+                    <img class="hover:bg-primary-purple rounded-full cursor-pointer transition-all duration-150" alt="instagram" src="/images/telegram.svg">
+                </a>
+                <a href="https://www.instagram.com/itfest_bishkek/?igsh=MTFubTEzOXp5eDV4eQ%3D%3D">
+                    <img class="hover:bg-primary-purple rounded-full cursor-pointer transition-all duration-150" alt="instagram" src="/images/instagram.svg">
+                </a>
+                <a href="https://wa.me/996552644444">
+                    <img class="hover:bg-primary-purple rounded-full cursor-pointer transition-all duration-150 facebook" alt="facebook" width="46px" src="/images/facebook.png">
+                </a>
+            </div>
+            <div class="overflow-hidden" style="height: 64px"></div>
+        </div>
+    </div>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            responsiveClass:true,
+            autoplay:true, // Добавляем автоматическую прокрутку
+            autoplayTimeout:3000, // Устанавливаем время задержки между прокрутками (в миллисекундах)
+            autoplayHoverPause:true, // Останавливать автоматическую прокрутку при наведении курсора
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:3,
+                    nav:false
+                },
+                1000:{
+                    items:5,
+                    nav:true
+                }
+            }
+        });
+
+        $('#menu-open').click(() => {
+            $('#sidebar').css('display', 'block');
+        });
+
+        $('#menu-close').click(() => {
+            $('#sidebar').css('display', 'none');
+        });
+
+        $('.menu-mob a').click(() => {
+            $('#sidebar').css('display', 'none');
+        });
+    </script>
+</body>
+</html>

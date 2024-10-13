@@ -1,0 +1,499 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static '/images/logo.png' %}" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>IT Fest</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- Owl Carousel JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header class="h-screen bg-cover relative flex flex-col select-none">
+        <nav>
+            <div class="d-flex container px-4 m-auto items-center md-justify-between">
+                <a href="/" class="cursor-pointer block flex flex-grow lg:flex-grow-0">
+                    <img class="header-logo" src="{{ site_settings.logo.url }}">
+                </a>
+                <div class="md-hidden d-flex justify-content-evenly flex-auto">
+                    <a href="/" class="cursor-pointer block flex flex-grow lg:flex-grow-0">
+                        Главная
+                    </a>
+                    <a href="/#sections" class="cursor-pointer block flex flex-grow lg:flex-grow-0">
+                        Секции
+                    </a>
+                    <a href="/#spikers" class="cursor-pointer block flex flex-grow lg:flex-grow-0">
+                        Спикеры
+                    </a>
+                    <a href="/#sponsors" class="cursor-pointer block flex flex-grow lg:flex-grow-0">
+                        Спонсоры
+                    </a>
+                    <a href="/#partners" class="cursor-pointer block flex flex-grow lg:flex-grow-0">
+                        Партнеры
+                    </a>
+                </div>
+                <div class="menu-mob">
+                    <div id="menu-open" class="cursor-pointer hover:bg-primary-purple rounded-lg transition-all duration-150">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.9952 25H38.0054" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M11.9952 33.0033H38.0054" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M11.9946 16.9966H38.0047" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="header-main row p-2">
+                <div class="col-md-6">
+                    <h1 class="main-title">
+                        {{ site_settings.header_title }}
+                    </h1>
+                    <div class="main-desc">
+                        <p>{{ site_settings.header_description }}</p>
+                    </div>
+                    <div class="maim-date">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" style="color:#D8D8D8" height="32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z"></path></svg>
+                        23-24 АВГУСТА
+                    </div>
+                    <div>
+                        <a class="button main-btn" href="#sections">
+                            Стать участником
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <img class="main-image" src="{{ site_settings.banner_image.url }}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="what-is">
+            <div class="container wrapper-what-is">
+                <div class="row mob-p">
+                    <div class="col-md-6">
+                        <div>
+                            <h1>Что такое <br> IT Fest?</h1>
+                            <p class="pt-8 pb-3 leading-5">
+                                IT Fest - это событие, объединяющее людей из мира информационных технологий для творческого обмена идеями, разработки проектов и налаживания контактов. <br><br>
+                                Это мероприятие предоставляет участникам возможность в короткие сроки в интенсивной и вдохновляющей обстановке воплотить свои идеи в жизнь, создать команду для работы над проектом или присоединиться к уже существующему проекту.
+                            </p>
+                            <p class="pb-3 leading-5">
+                                Мероприятие проводится в рамках развития цифровой трансформации на территории Кырыгзской Республики.
+                            </p>
+                            <div class="w-full">
+                                <h2 class="text-2xl font-extrabold">
+                                    Дата проведения: <span style="font-weight: 400;"> 23-24 августа </span>
+                                </h2>
+                                <div>
+                                    <h2 class="text-2xl font-extrabold">
+                                        Место проведения:
+                                        Иссык-Кульский район
+                                        <br>
+                                        <a style="color: purple;" target="_blank" class="underline hover:no-underline" href="https://2gis.kg/bishkek/geo/70030076136857457">
+                                            Asia Palace</a>
+                                    </h2>
+                                    <small>Озёрная, 1, ​с. Сары-Ой</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex justify-content-md-center">
+                            <div>
+                                <h1>Этапы</h1>
+                                <div class="py-4 d-flex gap-6 flex-col space-y-6">
+                                    <div class="d-flex gap-6 space-x-6 align-items-center">
+                                        <div>
+                                            <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M57.999 54H23.001C20.238 54 18 51.762 18 48.999V14.001C18 11.238 20.238 9 23.001 9H58.002C60.762 9 63 11.238 63 14.001V49.002C63 51.762 60.762 54 57.999 54V54Z" stroke="#05a9bb" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M45.804 21.498C48.732 24.426 48.732 29.175 45.804 32.106C42.876 35.034 38.127 35.034 35.196 32.106C32.265 29.178 32.268 24.429 35.196 21.498C38.124 18.567 42.873 18.57 45.804 21.498" stroke="#05a9bb" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M54 46.3021C53.607 45.3151 52.998 44.4271 52.218 43.7041V43.7041C50.901 42.4801 49.176 41.8021 47.376 41.8021C44.376 41.8021 36.624 41.8021 33.624 41.8021C31.824 41.8021 30.102 42.4831 28.782 43.7041V43.7041C28.002 44.4271 27.393 45.3151 27 46.3021" stroke="#05a9bb" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M54 54V57.999C54 60.762 51.762 63 48.999 63H14.001C11.238 63 9 60.762 9 57.999V23.001C9 20.238 11.238 18 14.001 18H18" stroke="#05a9bb" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h2 class="text-xl font-bold m-none">
+                                                Регистрируйте команду
+                                            </h2>
+                                            <p class="m-none">В команде максимум 3 человека</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-6 space-x-6 align-items-center">
+                                        <div>
+                                            <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M39 9H15C11.685 9 9 11.685 9 15V57C9 60.315 11.685 63 15 63H48.516C50.106 63 51.633 62.367 52.758 61.242L61.242 52.758C62.367 51.633 63 50.106 63 48.516V33" stroke="#05a9bb" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M48 63V51C48 49.344 49.344 48 51 48H63" stroke="#05a9bb" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M27 45L36.45 43.833C37.113 43.752 37.731 43.449 38.205 42.978L61.098 20.085C63.633 17.55 63.633 13.44 61.098 10.902V10.902C58.563 8.36698 54.453 8.36698 51.915 10.902L29.235 33.582C28.776 34.041 28.479 34.635 28.386 35.28L27 45Z" stroke="#05a9bb" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h2 class="text-xl font-bold m-none">
+                                                Придумайте идею
+                                            </h2>
+                                            <p class="m-none">Не бойтесь экспериментировать</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-6 space-x-6 align-items-center">
+                                        <div>
+                                            <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="9.98865" y="9.98865" width="54.0225" height="54.0225" rx="2" stroke="#05a9bb" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></rect>
+                                                <path d="M64.0111 21.9937H9.98865" stroke="#05a9bb" stroke-width="3"></path>
+                                                <path d="M27.9963 49.005L21.9938 43.0025L27.9963 37" stroke="#05a9bb" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M46.0037 37L52.0062 43.0025L46.0037 49.005" stroke="#05a9bb" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M39.329 33.9987L34.3259 52.0062" stroke="#05a9bb" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h2 class="text-xl font-bold m-none">
+                                                Разработайте прототип
+                                            </h2>
+                                            <p class="m-none">Покажите всем свое мастерство</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sections" id="sections">
+            <div class="container d-flex justify-content-between sm:flex-row mb-10">
+                <h1 class="text-4xl xl:text-5xl font-bold mb-10 sm:mb-0" id="festival-sections">
+                    Секции фестиваля
+                </h1>
+                <a class="button inline-block text-center" href="/registration_visitor">Стать участником как посетитель</a>
+            </div>
+            <div style="padding-top: 30px;" class="container">
+                <div class="row">
+                    {% for direction in directions %}
+                    <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+                        <div class="sections-item bg-white">
+                            <div class="d-flex justify-content-between">
+                                <img class="p-3 image-section" src="{{ direction.image.url }}" style="box-shadow: 0 16px 56px rgba(84, 127, 243, 0.3);">
+                            </div>
+                            <h2 class="sections-item-title">
+                                {{ direction.title }}
+                            </h2>
+                            <a class="button sections-item-btn" href="{{ direction.url }}">Стать участником</a>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+        <section class="speakers" id="spikers">
+            <div class="container d-flex justify-content-center sm:flex-row mb-10">
+                <h1 class="text-center text-4xl xl:text-5xl font-bold mb-10 sm:mb-0" id="festival-sections">
+                    Спикеры
+                </h1>
+            </div>
+            <p class="text-center speakers-desc">
+                Наши онлайн-конференции будут вести ведущие эксперты и лидеры в сфере, которые поделятся своим видением необходимых решений для создания сервисов будущего.
+            </p>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div>
+                        <div class="speakers-img">
+                            <img src="{% static '/images/speakers/6.jpg' %}" alt="">
+                        </div>
+                        <div class="pt-4 pb-2 font-semibold text-xl text-center">Ситдиков Дмитрий Олегович</div>
+                        <div class="text-center text-paragraph text-sm">Руководитель маркетинга платформы Яндекс Диалоги</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <div class="speakers-img">
+                            <img src="{% static '/images/speakers/7.webp' %}" alt="">
+                        </div>
+                        <div class="pt-4 pb-2 font-semibold text-xl text-center">Лукацкий Алексей Викторович</div>
+                        <div class="text-center text-paragraph text-sm">Бизнес-консультант по информационной безопасности Positive Technologies</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <div class="speakers-img">
+                            <img src="{% static '/images/speakers/8.jpg' %}" alt="">
+                        </div>
+                        <div class="pt-4 pb-2 font-semibold text-xl text-center">Anton Repponen</div>
+                        <div class="text-center text-paragraph text-sm">Designer and photographer based in Brooklyn, NY.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <div class="speakers-img">
+                            <img src="{% static '/images/speakers/1.jpg' %}" alt="">
+                        </div>
+                        <div class="pt-4 pb-2 font-semibold text-xl text-center">Алексей Калинников</div>
+                        <div class="text-center text-paragraph text-sm">Аккаунт Директор Яндекс Облако Казахстан</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <div class="speakers-img">
+                            <img src="{% static '/images/speakers/2.jpg' %}" alt="">
+                        </div>
+                        <div class="pt-4 pb-2 font-semibold text-xl text-center">Денис Копачевский</div>
+                        <div class="text-center text-paragraph text-sm">Технический директор Life2Win</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <div class="speakers-img">
+                            <img src="{% static '/images/speakers/3.jpg' %}" alt="">
+                        </div>
+                        <div class="pt-4 pb-2 font-semibold text-xl text-center">Ким Ки Ву</div>
+                        <div class="text-center text-paragraph text-sm">Со-основатель Корейской Академии Вебтунов Манхва, США</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <div class="speakers-img">
+                            <img src="{% static '/images/speakers/4.jpg' %}" alt="">
+                        </div>
+                        <div class="pt-4 pb-2 font-semibold text-xl text-center">Ким Джон</div>
+                        <div class="text-center text-paragraph text-sm">Директор зарубежного бизнес-подразделения Корейской Академии Вебтунов Манхва, США</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <div class="speakers-img">
+                            <img src="{% static '/images/speakers/5.jpg' %}" alt="">
+                        </div>
+                        <div class="pt-4 pb-2 font-semibold text-xl text-center">Olexander Kuchansky</div>
+                        <div class="text-center text-paragraph text-sm">Doctor of Technical Sciences, Professor, Head of the Department of Information Systems and Technologies, Faculty of Information Technologies, Taras Shevchenko National University of Kyiv</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="question">
+            <div class="container">
+                <div class="mx-auto d-flex flex-col items-center justify-content-center">
+                    <div class="text-5xl font-bold">
+                        Есть вопросы?
+                    </div>
+                    <div class="py-6">
+                        Напиши нам для получения подробной информации
+                    </div>
+                    <a class="button" href="/contact/">Задать вопрос</a>
+                </div>
+            </div>
+        </section>
+        <section class="organizers">
+            <div class="container">
+                <h1 class="text-4xl font-bold text-center py-6">Организаторы</h1>
+                <div class="d-flex flex-wrap justify-content-around">
+                    <div>
+                        <a style="padding: 5px 44px; height: 96px; width: 288px" class="m-4 bg-white rounded-lg flex items-center justify-center" href="#" target="_blank">
+                            <img src="{% static '/images/org4.png' %}" style=" max-height: 100%">
+                        </a>
+                    </div>
+                    <div>
+                        <a style="padding: 0 20px; height: 96px; width: 288px" class="m-4 bg-white rounded-lg flex items-center justify-center" href="http://alatoo.edu.kg/" target="_blank">
+                            <img src="{% static '/images/org1.png' %}" style=" max-height: 100%" >
+                        </a>
+                    </div>
+                    <div>
+                        <a style="padding: 0 20px; height: 96px; width: 288px" class="m-4 bg-white rounded-lg flex items-center justify-center" href="#" target="_blank">
+                            <img src="{% static '/images/org3.png' %}" style=" max-height: 100%">
+                        </a>
+                    </div>
+                    <div>
+                        <a style="padding: 5px 44px; height: 100px; width: 308px" class="m-4 bg-white rounded-lg flex items-center justify-center" href="#" target="_blank">
+                            <img src="{% static '/images/org10.jpg' %}" style="max-height: 100%; object-fit: cover;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sponsors" id="sponsors">
+            <div class="container">
+                <h1 class="text-4xl font-bold text-center py-6">Спонсоры</h1>
+                <div class="d-flex flex-wrap justify-content-around">
+                    <div>
+                        <a style="padding: 0 44px; height: 96px; width: 288px" class="m-4 bg-white rounded-lg flex items-center justify-center" href="#" target="_blank">
+                            <img src="{% static '/images/sponsor1.jpg' %}" style=" max-height: 100%" alt="#">
+                        </a>
+                    </div>
+                    <div>
+                        <a style="padding: 0 44px; height: 96px; width: 288px" class="m-4 bg-white rounded-lg flex items-center justify-center" href="#" target="_blank">
+                            <img src="{% static '/images/sponsor2.jpg' %}" style=" max-height: 100%" alt="#">
+                        </a>
+                    </div>
+                    <div>
+                        <a style="padding: 0 44px; height: 96px; width: 288px" class="m-4 bg-white rounded-lg flex items-center justify-center" href="#" target="_blank">
+                            <img src="{% static '/images/org7.png' %}" style=" max-height: 100%" alt="#">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="partners" id="partners">
+            <div class="container">
+                <h1 class="text-4xl font-bold text-center py-6">Партнеры</h1>
+                <div class="d-flex flex-wrap justify-content-around">
+                    <div>
+                        <a style="padding: 10px 22px; height: 96px; width: 288px" class="m-4 bg-white rounded-lg flex items-center justify-center" href="#" target="_blank">
+                            <img src="{% static '/images/org12.jpg' %}" style=" max-height: 100%" alt="#">
+                        </a>
+                        <div style="width: 288px; padding: 6px 44px;" class="flex justify-center text-center mx-4">
+                            <p class="w-full">
+                                Федерация Компьютерного Спорта
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="d-flex flex-col align-items-stretch">
+                <div class="wrapper-footer" style="margin: 0 auto;">
+                    <div class="d-flex justify-content-between mob-wrap">
+                        <div>
+                            <img class="footer-logo" src="{{ site_settings.logo.url }}" alt="ITfest">
+                        </div>
+                        <div class="d-flex gap-6 space-x-4 items-center">
+                            <a href="{{ site_settings.telegram_link }}" target="_blank">
+                                <img class="hover:bg-primary-purple rounded-full cursor-pointer transition-all duration-150" alt="telegram" src="{{ site_settings.telegram_icon.url }}">
+                            </a>
+                            <a href="{{ site_settings.instagram_link }}">
+                                <img class="hover:bg-primary-purple rounded-full cursor-pointer transition-all duration-150" alt="instagram" src="{{ site_settings.instagram_icon.url }}">
+                            </a>
+                            <a href="{{ site_settings.whatsapp_link }}">
+                                <img class="hover:bg-primary-purple rounded-full cursor-pointer transition-all duration-150 facebook" alt="facebook" width="46px" src="{{ site_settings.whatsapp_icon.url }}">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-6 align-items-center footer-links">
+                        <a class="hover:underline cursor-pointer px-2 transition-all " href="/">
+                            Главная
+                        </a>
+                        <a class="hover:underline cursor-pointer px-2 transition-all" href="/#sections">
+                            Секции
+                        </a>
+                        <a class="hover:underline cursor-pointer px-2 transition-all" href="/#spikers">
+                            Спикеры
+                        </a>
+                        <a class="hover:underline cursor-pointer px-2 transition-all" href="/#sponsors">
+                            Спонсоры
+                        </a>
+                        <a class="hover:underline cursor-pointer px-2 transition-all" href="/#partners">
+                            Партнеры
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-b border-white mt-8"></div>
+            <div class="mt-8 text-center text-white">
+                <div class="mb-2">
+                    
+                </div>
+                <div>
+                    © ITFest, 2024 г.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="sidebar" class="top-0 right-0 h-screen left-0 grid grid-cols-5 overflow-scroll fixed" style="/*background-color: rgba(0, 0, 0, 0.4);*/ z-index: 10">
+        <div class="col-span-4 col-start-2 sm:col-span-2 sm:col-start-4 bg-primary-purple flex flex-col items-end px-4 space-y-3 text-white text-xl">
+            <div class="d-flex align-items-center justify-content-end" style="height: 120px">
+                <div id="menu-close" class="cursor-pointer" style="cursor: pointer;">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 16L32 32" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M32 16L16 32" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="d-flex flex-col menu-mob">
+                <a class="hover:underline cursor-pointer" href="/">
+                    Главная
+                </a>
+                <a class="hover:underline cursor-pointer" href="/#sections">
+                    Секции
+                </a>
+                <a class="hover:underline cursor-pointer" href="/#spikers">
+                    Спикеры
+                </a>
+                <a class="hover:underline cursor-pointer" href="/#sponsors">
+                    Спонсоры
+                </a>
+                <a class="hover:underline cursor-pointer" href="/#partners">
+                    Партнеры
+                </a>
+            </div>
+            <div>
+                <a class="button button-outline button-sm flex justify-center text-base" href="/login">
+                    Войти
+                </a>
+            </div>
+            
+            <div class="d-flex justify-content-start space-x-5 gap-6">
+                <a href="https://t.me/itfest2024" target="_blank">
+                    <img class="hover:bg-primary-purple rounded-full cursor-pointer transition-all duration-150" alt="instagram" src="{% static '/images/telegram.svg' %}">
+                </a>
+                <a href="https://www.instagram.com/itfest_bishkek/?igsh=MTFubTEzOXp5eDV4eQ%3D%3D">
+                    <img class="hover:bg-primary-purple rounded-full cursor-pointer transition-all duration-150" alt="instagram" src="{% static '/images/instagram.svg' %}">
+                </a>
+                <a href="https://wa.me/996552644444">
+                    <img class="hover:bg-primary-purple rounded-full cursor-pointer transition-all duration-150 facebook" alt="facebook" width="46px" src="{% static '/images/facebook.png' %}">
+                </a>
+            </div>
+            <div class="overflow-hidden" style="height: 64px"></div>
+        </div>
+    </div>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            responsiveClass:true,
+            autoplay:true, // Добавляем автоматическую прокрутку
+            autoplayTimeout:3000, // Устанавливаем время задержки между прокрутками (в миллисекундах)
+            autoplayHoverPause:true, // Останавливать автоматическую прокрутку при наведении курсора
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:3,
+                    nav:false
+                },
+                1000:{
+                    items:5,
+                    nav:true
+                }
+            }
+        });
+
+        $('#menu-open').click(() => {
+            $('#sidebar').css('display', 'block');
+        });
+
+        $('#menu-close').click(() => {
+            $('#sidebar').css('display', 'none');
+        });
+
+        $('.menu-mob a').click(() => {
+            $('#sidebar').css('display', 'none');
+        });
+    </script>
+</body>
+</html>

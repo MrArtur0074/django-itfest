@@ -1,0 +1,294 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>IT Fest</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- Owl Carousel JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header class="h-screen bg-cover relative flex flex-col select-none">
+        <nav>
+            <div class="d-flex container px-4 m-auto items-center md-justify-between">
+                <a href="/" class="cursor-pointer block flex flex-grow lg:flex-grow-0">
+                    <img class="header-logo" src="/images/logo.png">
+                </a>
+                <div class="md-hidden d-flex justify-content-evenly flex-auto">
+                    <a href="/" class="cursor-pointer block flex flex-grow lg:flex-grow-0">
+                        Главная
+                    </a>
+                    <a href="/#sections" class="cursor-pointer block flex flex-grow lg:flex-grow-0">
+                        Секции
+                    </a>
+                    <a href="/#spikers" class="cursor-pointer block flex flex-grow lg:flex-grow-0">
+                        Спикеры
+                    </a>
+                    <a href="/#sponsors" class="cursor-pointer block flex flex-grow lg:flex-grow-0">
+                        Спонсоры
+                    </a>
+                    <a href="/#partners" class="cursor-pointer block flex flex-grow lg:flex-grow-0">
+                        Партнеры
+                    </a>
+                </div>
+                <div class="menu-mob">
+                    <div id="menu-open" class="cursor-pointer hover:bg-primary-purple rounded-lg transition-all duration-150">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.9952 25H38.0054" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M11.9952 33.0033H38.0054" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M11.9946 16.9966H38.0047" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="header-main row p-2">
+                <div class="col-md-6">
+                    <h1 class="main-title mob-size">
+                        Секция: IT Экспо
+                    </h1>
+                    <p>
+                        В рамках секции «Готовые решения» участники демонстрируют свои Start-up проекты членам жюри. Проекты должны быть связаны с IT-технологиями (мобильные приложения, платформы, веб-сайты, ПО, hardware и др.)
+                    </p>
+                    <div>
+                        <a class="button main-btn" href="#sections">
+                            Стать участником
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <img class="main-image" src="/images/1698653662812.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="directions">
+            <div class="container">
+                <!--<div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="sections-item bg-white">
+                            <div class="d-flex justify-content-between">
+                                <img class="p-3 image-section" src="/images/one.png" style="box-shadow: 0 16px 56px rgba(84, 127, 243, 0.3);">
+                            </div>
+                            <h2 class="sections-item-title">
+                                Цифровой <br> университет
+                            </h2>
+                            <a class="button sections-item-btn" href="/information-technology.html">Стать участником</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="sections-item bg-white">
+                            <div class="d-flex justify-content-between">
+                                <img class="p-3 image-section" src="/images/four.png" style="box-shadow: 0 16px 56px rgba(84, 127, 243, 0.3);">
+                            </div>
+                            <h2 class="sections-item-title">
+                                Цифровая <br> школа
+                            </h2>
+                            <a class="button sections-item-btn" href="/information-technology.html">Стать участником</a>
+                        </div>
+                    </div>
+                </div>-->
+                <h1 style="text-align: center; margin-bottom: 20px;" class="main-title">
+                    Призы
+                </h1>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="bg-white">
+                            <h2 style="font-weight: 700;" class="text-center sections-item-title">
+                                1 место
+                            </h2>
+                            <p style="font-size: 1.5rem;" class="text-center">
+                                50 000 сом
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="bg-white">
+                            <h2 style="font-weight: 700;"  class="text-center sections-item-title">
+                                2 место
+                            </h2>
+                            <p style="font-size: 1.5rem;" class="text-center">
+                                30 000 сом
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="bg-white">
+                            <h2 style="font-weight: 700;"  class="text-center sections-item-title">
+                                3 место
+                            </h2>
+                            <p style="font-size: 1.5rem;" class="text-center">
+                                20 000 сом
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="directions">
+            <div class="container">
+                <h1 style="margin-bottom: 20px;" class="main-title">
+                    Критерий оценки проектов:
+                </h1>
+                <ul>
+                    <li data-block-key="dhsdh">Новизна</li>
+                    <li data-block-key="aiskh">Востребованность</li>
+                    <li data-block-key="qs4nv">Бизнес-модель / Самоокупаемость</li>
+                    <li data-block-key="xia9f">Команда</li>
+                    <li data-block-key="pszan">Реализуемость<br></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="d-flex flex-col align-items-stretch">
+                <div class="wrapper-footer" style="margin: 0 auto;">
+                    <div class="d-flex justify-content-between mob-wrap">
+                        <div>
+                            <img class="footer-logo" src="/images/logo.png" alt="ITfest">
+                        </div>
+                        <div class="d-flex gap-6 space-x-4 items-center">
+                            <a href="https://t.me/itfest2024" target="_blank">
+                                <img class="hover:bg-primary-purple rounded-full cursor-pointer transition-all duration-150" alt="instagram" src="/images/telegram.svg">
+                            </a>
+                            <a href="https://www.instagram.com/itfest_bishkek/?igsh=MTFubTEzOXp5eDV4eQ%3D%3D">
+                                <img class="hover:bg-primary-purple rounded-full cursor-pointer transition-all duration-150" alt="instagram" src="/images/instagram.svg">
+                            </a>
+                            <a href="https://wa.me/996552644444">
+                                <img class="hover:bg-primary-purple rounded-full cursor-pointer transition-all duration-150 facebook" alt="facebook" width="46px" src="/images/facebook.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-6 align-items-center footer-links">
+                        <a class="hover:underline cursor-pointer px-2 transition-all " href="/">
+                            Главная
+                        </a>
+                        <a class="hover:underline cursor-pointer px-2 transition-all" href="/#sections">
+                            Секции
+                        </a>
+                        <a class="hover:underline cursor-pointer px-2 transition-all" href="/#spikers">
+                            Спикеры
+                        </a>
+                        <a class="hover:underline cursor-pointer px-2 transition-all" href="/#sponsors">
+                            Спонсоры
+                        </a>
+                        <a class="hover:underline cursor-pointer px-2 transition-all" href="/#partners">
+                            Партнеры
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-b border-white mt-8"></div>
+            <div class="mt-8 text-center text-white">
+                <div class="mb-2">
+                    
+                </div>
+                <div>
+                    © ITFest, 2024 г.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="sidebar" class="top-0 right-0 h-screen left-0 grid grid-cols-5 overflow-scroll fixed" style="/*background-color: rgba(0, 0, 0, 0.4);*/ z-index: 10">
+        <div class="col-span-4 col-start-2 sm:col-span-2 sm:col-start-4 bg-primary-purple flex flex-col items-end px-4 space-y-3 text-white text-xl">
+            <div class="d-flex align-items-center justify-content-end" style="height: 120px">
+                <div id="menu-close" class="cursor-pointer" style="cursor: pointer;">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 16L32 32" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M32 16L16 32" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="d-flex flex-col menu-mob">
+                <a class="hover:underline cursor-pointer" href="/">
+                    Главная
+                </a>
+                <a class="hover:underline cursor-pointer" href="/#sections">
+                    Секции
+                </a>
+                <a class="hover:underline cursor-pointer" href="/#spikers">
+                    Спикеры
+                </a>
+                <a class="hover:underline cursor-pointer" href="/#sponsors">
+                    Спонсоры
+                </a>
+                <a class="hover:underline cursor-pointer" href="/#partners">
+                    Партнеры
+                </a>
+            </div>
+            <div>
+                <a class="button button-outline button-sm flex justify-center text-base" href="/login">
+                    Войти
+                </a>
+            </div>
+            
+            <div class="d-flex justify-content-start space-x-5 gap-6">
+                <a href="https://t.me/itfest2024" target="_blank">
+                    <img class="hover:bg-primary-purple rounded-full cursor-pointer transition-all duration-150" alt="instagram" src="/images/telegram.svg">
+                </a>
+                <a href="https://www.instagram.com/itfest_bishkek/?igsh=MTFubTEzOXp5eDV4eQ%3D%3D">
+                    <img class="hover:bg-primary-purple rounded-full cursor-pointer transition-all duration-150" alt="instagram" src="/images/instagram.svg">
+                </a>
+                <a href="https://wa.me/996552644444">
+                    <img class="hover:bg-primary-purple rounded-full cursor-pointer transition-all duration-150 facebook" alt="facebook" width="46px" src="/images/facebook.png">
+                </a>
+            </div>
+            <div class="overflow-hidden" style="height: 64px"></div>
+        </div>
+    </div>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            responsiveClass:true,
+            autoplay:true, // Добавляем автоматическую прокрутку
+            autoplayTimeout:3000, // Устанавливаем время задержки между прокрутками (в миллисекундах)
+            autoplayHoverPause:true, // Останавливать автоматическую прокрутку при наведении курсора
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:3,
+                    nav:false
+                },
+                1000:{
+                    items:5,
+                    nav:true
+                }
+            }
+        });
+
+        $('#menu-open').click(() => {
+            $('#sidebar').css('display', 'block');
+        });
+
+        $('#menu-close').click(() => {
+            $('#sidebar').css('display', 'none');
+        });
+
+        $('.menu-mob a').click(() => {
+            $('#sidebar').css('display', 'none');
+        });
+    </script>
+</body>
+</html>
